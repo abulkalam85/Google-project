@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section{
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+}
+section header{
+    width:100%;
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    top:0;
+    padding: 20px;
+    margin-right:150px;
+
+}
+section header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section header ul li{
+    list-style: none;
+    margin-left: 50px;
+}
+section header ul li a{
+    text-decoration: none;
+    color: slateblue;
+    font-size: 20px;
+}
+section header ul li button{
+    color: slateblue;
+    padding: 5px;
+    cursor: pointer;
+}
+section .main{
+    width:580px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section .main .searchbox{
+    position: relative;
+    width:100%;
+    margin-top: 20px;
+
+}
+section .main .searchbox .search{
+    width: 100%;
+    padding: 10px;
+    margin-left:5px;
+    border-radius:30px;
+    outline: none;
+    font-size:15px;
+}
+section .main .searchbox .icons{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex; 
+    padding:10px 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+section .main .button{
+    margin-top: 30px;
+}
+section .main .button button{
+    margin: 0 20px;
+    padding: 5px;
+}
+section .main .lang{
+    margin-top: 20px;
+}
+section .main .lang a{
+    text-decoration: none;
+
+}
+@media screen and (max-width:500px)  {
+        
+        body{
+            background-color: rgb(78, 235, 15);
+        }
+        header ul li{
+            margin-left:-1rem;
+        }
+         header ul li a{
+            text-align:center;
+            justify-content: center;
+            align-items: center;
+            font-size:.8rem;
+        }
+
+    }
